@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,88 +8,169 @@
     <link rel="stylesheet" href="../style.css">
     <style>
         body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
 
-header img {
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-}
+        header img {
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+        }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-}
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
 
-nav ul li {
-    display: inline;
-}
+        nav ul li {
+            display: inline;
+        }
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
 
-.content {
-    padding: 20px;
-}
+        .content {
+            padding: 20px;
+        }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
+        h1 {
+            text-align: center;
+            color: #333;
+        }
 
-footer a {
-    color: #fff;
-    text-decoration: none;
-}
+        .team-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+        }
 
+        .team-member {
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 15px;
+            max-width: 250px;
+            background-color: #f9f9f9;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .team-member img {
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        .team-member h3 {
+            margin: 10px 0 5px;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .team-member p {
+            margin: 0;
+            font-size: 14px;
+            color: #666;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
     </style>
 </head>
+
 <body>
 
-<header>
-    <a href="index.html">
-        <img src="logo.png" alt="Logo">
-    </a>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="team.html">Team</a></li>
-            <li><a href="research.html">Research</a></li>
-            <li><a href="publications.html">Publications</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="about.html">About</a></li>
-        </ul>
-    </nav>
-</header>
+    <header>
+        <a href="index.html">
+            <img src="logo.png" alt="Logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<div class="content">
-    <h1>Our Team</h1>
-    <p>En esta sección puedes describir a los miembros del equipo. Puedes agregar información sobre sus roles, experiencia y contribuciones al proyecto.</p>
-</div>
+    <div class="content">
+        <h1>Our Team</h1>
+        <div class="team-container">
+            <div class="team-member">
+                <img src="Images/Profile.jpg" alt="Miembro 1">
+                <h3>Dr. Fernado Wario Vázquez</h3>
+                <p>Especialidad: Biología Molecular</p>
+                <p>Experta en estudios genómicos y bioinformática.</p>
+            </div>
+            <div class="team-member">
+                <img src="Images/JorgeGalvez.jpg" alt="Miembro 2">
+                <h3>Dr. Jorge de Jesús Gálvez Rodríguez</h3>
+                <p>Especialidad: Ingeniería Química</p>
+                <p>Especialista en procesos sostenibles.</p>
+            </div>
+            <div class="team-member">
+                <img src="Images/Octavio_Camarena.jpg" alt="Miembro 3">
+                <h3>Dr. José Octavio Camarena Méndez</h3>
+                <p>Especialidad: Bioquímica</p>
+                <p>Investigadora en mecanismos celulares.</p>
+            </div>
+            <div class="team-member">
+                <img src="Images/Omar Foto.jpg" alt="Miembro 4">
+                <h3>Dr. Omar Avalos Alvarez</h3>
+                <p>Especialidad: Física Aplicada</p>
+                <p>Desarrollador de tecnologías innovadoras.</p>
+            </div>
+            <div class="team-member">
+                <img src="Images/PrimitivoDiaz.jpg" alt="Miembro 5">
+                <h3>Dr. Primitivo Emmanuel Díaz Guerrero</h3>
+                <p>Especialidad: Ingeniería de Software</p>
+                <p>Diseñadora de soluciones tecnológicas.</p>
+            </div>
+            <div class="team-member">
+                <img src="Images/SalvadorHinojosa.jpg" alt="Miembro 6">
+                <h3>Dr. Salvador Miguel Hinojosa Cervantes</h3>
+                <p>Especialidad: Nanotecnología</p>
+                <p>Investigador en materiales avanzados.</p>
+            </div>
+        </div>
+    </div>
 
-<footer>
-    <p>Encuéntranos en <a href="https://github.com/tu_usuario" target="_blank">GitHub</a></p>
-</footer>
+    <footer>
+        <p>Encuéntranos en <a href="https://github.com/tu_usuario" target="_blank">GitHub</a></p>
+    </footer>
 
 </body>
+
 </html>
