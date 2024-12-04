@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "name": "Fernando Wario",
+        "position": "Associate Professor",
+        "bio": "Fernando is an associate professor at Universidad de Guadalajara...",
+        "image": "../Images/Profile_2.jpg",
+        "google_scholar": "https://scholar.google.com/ferwario",
+        "orcid": "https://orcid.org/0000-0001-2345-6789"
+    },
+    {
+        "id": 2,
+        "name": "Jorge de Jesús Gálvez Rodríguez",
+        "position": "Associate Professor",
+        "bio": "Especialista en procesos sostenibles...",
+        "image": "../Images/JorgeGalvez.jpg",
+        "google_scholar": "https://scholar.google.com/jorgegalvez",
+        "orcid": "https://orcid.org/0000-0002-3456-7890"
+    }
+]
