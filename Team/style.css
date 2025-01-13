@@ -102,13 +102,13 @@ footer {
 }
 
 footer a {
-    text-decoration: none;
+    text-decoration: none; 
+    margin-right: 10px; /* Espaciado entre la imagen y el texto */
 }
 
 .footer-icon {
     width: 30px;
     height: 30px;
-    vertical-align: middle;
 }
 
 
