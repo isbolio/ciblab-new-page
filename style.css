@@ -38,6 +38,72 @@ nav ul li a {
     padding: 20px;
 }
 
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.filters {
+    display: flex;
+    gap: 10px;
+}
+
+.filters button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.filters button:hover {
+    background-color: #ddd;
+}
+
+.publications {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.publication-card {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: box-shadow 0.3s;
+}
+
+.publication-card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.publication-card h3 {
+    margin: 0 0 10px;
+}
+
+.publication-card p {
+    margin: 5px 0;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.publication-card .preview {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #333;
+}
+
 footer {
     background-color: #333;
     color: #fff;
@@ -55,7 +121,7 @@ footer {
 
 footer a {
     text-decoration: none; 
-    margin-right: 10px; /* Espaciado entre la imagen y el texto */
+    margin-right: 10px;
 }
 
 .footer-icon {
