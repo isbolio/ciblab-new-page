@@ -8,8 +8,8 @@ body {
 }
 
 header {
-    background-color: #1a273b; /* Azul marino oscuro */
-    color: #fff;
+    background-color: #d3d3d3; /* Gris claro */
+    color: #333; /* Texto oscuro para contraste */
     padding: 10px 20px;
     display: flex;
     align-items: center;
