@@ -1,11 +1,14 @@
+/* Cambiado a una fuente más moderna y fondo azul marino claro */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif; /* Fuente moderna */
     margin: 0;
     padding: 0;
+    background-color: #1c2e4a; /* Azul marino claro */
+    color: #e0e0e0; /* Texto claro para mejor legibilidad */
 }
 
 header {
-    background-color: #333;
+    background-color: #1a273b; /* Azul marino oscuro */
     color: #fff;
     padding: 10px 20px;
     display: flex;
@@ -32,11 +35,15 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .content {
     padding: 20px;
-} 
+    max-width: 800px; /* Limita el ancho del contenido */
+    margin: 0 auto; /* Centra el contenido */
+    line-height: 1.6; /* Mejor separación entre líneas */
+}
 
 .search-bar {
     display: flex;
@@ -80,7 +87,8 @@ nav ul li a {
     padding: 15px;
     border: 1px solid #ccc;
     border-radius: 10px;
-    background-color: #fff;
+    background-color: #2a3b55; /* Fondo gris azulado */
+    color: #fff; /* Texto claro */
     transition: box-shadow 0.3s;
 }
 
@@ -95,13 +103,13 @@ nav ul li a {
 .publication-card p {
     margin: 5px 0;
     font-size: 0.9em;
-    color: #555;
+    color: #ccc;
 }
 
 .publication-card .preview {
     margin-top: 10px;
     font-size: 0.9em;
-    color: #333;
+    color: #ddd;
 }
 
 .mosaic {
@@ -115,9 +123,10 @@ nav ul li a {
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
-    background-color: #f9f9f9;
+    background-color: #344563; /* Azul grisáceo */
     transition: transform 0.3s, box-shadow 0.3s;
     text-align: center;
+    color: #fff; /* Texto claro */
 }
 
 .mosaic-item:hover {
@@ -131,7 +140,7 @@ nav ul li a {
 
 .mosaic-item p {
     font-size: 0.9em;
-    color: #555;
+    color: #ccc;
 }
 
 .mosaic-item img {
@@ -142,7 +151,7 @@ nav ul li a {
 }
 
 footer {
-    background-color: #333;
+    background-color: #1a273b; /* Azul oscuro */
     color: #fff;
     text-align: center;
     padding: 10px;
@@ -159,6 +168,7 @@ footer {
 footer a {
     text-decoration: none;
     margin-right: 10px;
+    color: #e0e0e0;
 }
 
 .footer-icon {
