@@ -28,7 +28,6 @@ header img {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 15px;
 }
 
 nav ul li {
@@ -40,12 +39,6 @@ nav ul li a {
     text-decoration: none; /* Sin subrayado */
     padding: 5px 10px;
     border-radius: 5px; /* Bordes redondeados */
-}
-
-nav ul li a:hover,
-nav ul li a:focus {
-    background-color: #333; /* Fondo oscuro al pasar el ratón o enfocar */
-    color: #fff; /* Texto blanco */
 }
 
 .content {
@@ -193,15 +186,3 @@ footer a {
     margin-right: 8px;
 }
 
-/* Media queries para responsividad */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-}
