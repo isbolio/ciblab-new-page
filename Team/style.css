@@ -28,6 +28,7 @@ header img {
 nav ul {
     list-style: none;
     display: flex;
+    gap: 15px;
 }
 
 nav ul li {
@@ -37,8 +38,7 @@ nav ul li {
 nav ul li a {
     color: #e0e0e0; /* Color de los enlaces */
     text-decoration: none; /* Sin subrayado */
-    padding: 5px 10px;
-    border-radius: 5px; /* Bordes redondeados */
+    font-weight: bold; /* Texto en negrita */
 }
 
 .content {
