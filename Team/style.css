@@ -5,7 +5,6 @@ body {
     padding: 0;
     background-color: #1c2e4a; /* Azul marino claro */
     color: #e0e0e0; /* Texto claro */
-    
 }
 
 header {
@@ -35,9 +34,9 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #e0e0e0; /* Color de los enlaces */
-    text-decoration: none; /* Sin subrayado */
-    font-weight: bold; /* Texto en negrita */
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .content {
@@ -184,4 +183,3 @@ footer a {
     height: 20px;
     margin-right: 8px;
 }
-
