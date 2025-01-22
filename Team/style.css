@@ -5,8 +5,7 @@ body {
     padding: 0;
     background-color: #1c2e4a; /* Azul marino claro */
     color: #e0e0e0; /* Texto claro */
-    max-width: 1200px; /* Ancho máximo para mejorar la legibilidad */
-    margin: 0 auto; /* Centrar el contenido */
+    
 }
 
 header {
