@@ -1,4 +1,3 @@
-/* Mantén los estilos globales y existentes */
 body {
     font-family: 'Roboto', sans-serif; /* Fuente moderna */
     margin: 0;
@@ -51,11 +50,11 @@ h1 {
 }
 
 .team-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Uso de grid para mayor flexibilidad */
+    gap: 20px; /* Espaciado uniforme entre tarjetas */
+    justify-content: center; /* Centrado horizontal */
+    padding: 20px; /* Espaciado interno para evitar que las tarjetas queden muy pegadas al borde */
 }
 
 .team-link {
@@ -68,11 +67,12 @@ h1 {
     border: 1px solid #ddd;
     border-radius: 10px;
     padding: 15px;
-    max-width: 250px;
     background-color: #2a3b55; /* Fondo azul grisáceo */
     color: #fff; /* Texto claro */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 100%; /* Asegura que no excedan el tamaño permitido */
+    margin: auto; /* Centra cada tarjeta dentro de su celda */
 }
 
 .team-member:hover {
@@ -82,7 +82,7 @@ h1 {
 
 .team-member img {
     border-radius: 50%; /* Imagen circular */
-    width: 100px; /* Tamaño reducido */
+    width: 100px;
     height: 100px;
     object-fit: cover;
     margin-bottom: 10px;
