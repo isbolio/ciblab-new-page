@@ -51,10 +51,9 @@ h1 {
 
 .team-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Uso de grid para mayor flexibilidad */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajusta el tamaño de las columnas automáticamente */
     gap: 20px; /* Espaciado uniforme entre tarjetas */
-    justify-content: center; /* Centrado horizontal */
-    padding: 20px; /* Espaciado interno para evitar que las tarjetas queden muy pegadas al borde */
+    padding: 20px; /* Espaciado interno para evitar que queden pegadas al borde */
 }
 
 .team-link {
