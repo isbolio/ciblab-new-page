@@ -16,9 +16,10 @@
 
         header {
             background-color: #7f7fa8; /* Gris claro */
-            color: #333; /* Texto oscuro para contraste */
+            color: #333;
             padding: 10px 20px;
             display: flex;
+            flex-wrap: wrap;
             align-items: center;
             justify-content: space-between;
         }
@@ -33,7 +34,10 @@
         nav ul {
             list-style: none;
             display: flex;
-            gap: 15px;
+            gap: 10px;
+            flex-wrap: wrap;
+            padding: 0;
+            margin: 0;
         }
 
         nav ul li {
@@ -44,37 +48,39 @@
             color: #fff;
             text-decoration: none;
             font-weight: bold;
+            font-size: 0.9rem;
         }
 
         .main-image {
-            width: 300px; /* Tamaño reducido */
-            height: 300px; /* Tamaño reducido */
-            border-radius: 50%; /* Recorte circular */
-            object-fit: cover; /* Asegura que la imagen se ajuste bien al círculo */
+            width: 80%;
+            max-width: 300px; /* Limitar el tamaño */
+            height: auto;
+            border-radius: 50%;
+            object-fit: cover;
             margin: 20px auto;
             display: block;
         }
 
         .content {
             padding: 20px;
-            max-width: 800px; /* Limitar ancho del texto */
-            margin: 0 auto; /* Centrar el texto en la página */
-            text-align: left; /* Alinear texto a la izquierda */
+            max-width: 90%; /* Ajustar a la pantalla */
+            margin: 0 auto;
+            text-align: left;
         }
 
         h1 {
-            font-size: 2rem; /* Tamaño más pequeño */
+            font-size: 1.8rem; /* Tamaño ajustado */
             margin-bottom: 20px;
-            text-align: center; /* Centrar el título principal */
+            text-align: center;
         }
 
         h2 {
-            font-size: 1.5rem; /* Tamaño más pequeño */
+            font-size: 1.4rem; /* Tamaño ajustado */
             margin: 20px 0;
         }
 
         p {
-            font-size: 1rem; /* Tamaño más pequeño */
+            font-size: 1rem;
             line-height: 1.6;
         }
 
@@ -84,20 +90,79 @@
         }
 
         ul li {
-            font-size: 1rem; /* Tamaño más pequeño */
+            font-size: 1rem;
             margin: 10px 0;
         }
 
         footer {
             background-color: #1a273b;
             color: #fff;
-            padding: 15px 0;
-            font-size: 12px; /* Tamaño más pequeño */
+            padding: 15px 10px;
+            font-size: 0.8rem;
+            text-align: center;
         }
 
         .footer-icon {
-            width: 30px;
-            height: 30px;
+            width: 25px;
+            height: 25px;
+        }
+
+        /* Estilos responsivos */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 5px;
+            }
+
+            nav ul li a {
+                font-size: 1rem;
+            }
+
+            h1 {
+                font-size: 1.6rem;
+            }
+
+            h2 {
+                font-size: 1.2rem;
+            }
+
+            p, ul li {
+                font-size: 0.9rem;
+            }
+
+            .footer-icon {
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .main-image {
+                width: 100%; /* Usar todo el ancho disponible */
+                max-width: 200px; /* Reducir tamaño */
+            }
+
+            h1 {
+                font-size: 1.4rem;
+            }
+
+            h2 {
+                font-size: 1rem;
+            }
+
+            p, ul li {
+                font-size: 0.8rem;
+            }
+
+            footer {
+                font-size: 0.7rem;
+            }
         }
     </style>
 </head>
