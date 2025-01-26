@@ -9,19 +9,18 @@
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #1c2e4a;
+            background-color: #1c2e4a; /* Azul marino claro */
             color: #e0e0e0;
             text-align: center;
         }
 
         header {
-            background-color: #7f7fa8;
-            color: #333;
+            background-color: #7f7fa8; /* Gris claro */
+            color: #333; /* Texto oscuro para contraste */
             padding: 10px 20px;
             display: flex;
             align-items: center;
             justify-content: space-between;
-            position: relative;
         }
 
         header img {
@@ -31,96 +30,51 @@
             border-radius: 50%;
         }
 
-        nav {
-            position: fixed;
-            top: 0;
-            left: -250px;
-            height: 100%;
-            width: 250px;
-            background-color: #333;
-            color: #fff;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding-top: 20px;
-            transition: left 0.3s ease-in-out;
-            box-shadow: 3px 0 5px rgba(0, 0, 0, 0.2);
-        }
-
-        nav.open {
-            left: 0;
-        }
-
         nav ul {
             list-style: none;
-            padding: 0;
-            margin: 0;
-            width: 100%;
+            display: flex;
+            gap: 15px;
         }
 
         nav ul li {
-            width: 100%;
-            text-align: center;
-            margin: 10px 0;
+            display: inline;
         }
 
         nav ul li a {
             color: #fff;
             text-decoration: none;
-            font-size: 1.2rem;
-            display: block;
-            padding: 10px 0;
-            width: 100%;
-        }
-
-        nav ul li a:hover {
-            background-color: #555;
-        }
-
-        .menu-toggle {
-            background-color: #333;
-            color: #fff;
-            border: none;
-            padding: 10px 15px;
-            font-size: 1.2rem;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-
-        .menu-toggle:hover {
-            background-color: #555;
+            font-weight: bold;
         }
 
         .main-image {
-            width: 80%;
-            max-width: 300px;
-            height: auto;
-            border-radius: 50%;
-            object-fit: cover;
+            width: 300px; /* Tamaño reducido */
+            height: 300px; /* Tamaño reducido */
+            border-radius: 50%; /* Recorte circular */
+            object-fit: cover; /* Asegura que la imagen se ajuste bien al círculo */
             margin: 20px auto;
             display: block;
         }
 
         .content {
             padding: 20px;
-            max-width: 90%;
-            margin: 0 auto;
-            text-align: left;
+            max-width: 800px; /* Limitar ancho del texto */
+            margin: 0 auto; /* Centrar el texto en la página */
+            text-align: left; /* Alinear texto a la izquierda */
         }
 
         h1 {
-            font-size: 1.8rem;
+            font-size: 2rem; /* Tamaño más pequeño */
             margin-bottom: 20px;
-            text-align: center;
+            text-align: center; /* Centrar el título principal */
         }
 
         h2 {
-            font-size: 1.4rem;
+            font-size: 1.5rem; /* Tamaño más pequeño */
             margin: 20px 0;
         }
 
         p {
-            font-size: 1rem;
+            font-size: 1rem; /* Tamaño más pequeño */
             line-height: 1.6;
         }
 
@@ -130,40 +84,22 @@
         }
 
         ul li {
-            font-size: 1rem;
+            font-size: 1rem; /* Tamaño más pequeño */
             margin: 10px 0;
         }
 
         footer {
             background-color: #1a273b;
             color: #fff;
-            padding: 15px 10px;
-            font-size: 0.8rem;
-            text-align: center;
+            padding: 15px 0;
+            font-size: 12px; /* Tamaño más pequeño */
         }
 
         .footer-icon {
-            width: 25px;
-            height: 25px;
-        }
-
-        /* Estilos responsivos */
-        @media (min-width: 768px) {
-            .menu-toggle {
-                display: block;
-            }
-
-            nav ul li a {
-                font-size: 1rem;
-            }
+            width: 30px;
+            height: 30px;
         }
     </style>
-    <script>
-        function toggleMenu() {
-            const nav = document.querySelector("nav");
-            nav.classList.toggle("open");
-        }
-    </script>
 </head>
 <body>
 
@@ -171,19 +107,17 @@
     <a href="index.html">
         <img src="Images/Imagen1.jpg" alt="Logo">
     </a>
-    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Team/team.html">Team</a></li>
+            <li><a href="Research/research.html">Research</a></li>
+            <li><a href="Publications/news.html">News</a></li>
+            <li><a href="Contact/contact.html">Contact</a></li>
+            <li><a href="Collaboration/collaboration.html">Collaboration</a></li>
+        </ul>
+    </nav>
 </header>
-
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="Team/team.html">Team</a></li>
-        <li><a href="Research/research.html">Research</a></li>
-        <li><a href="Publications/news.html">News</a></li>
-        <li><a href="Contact/contact.html">Contact</a></li>
-        <li><a href="Collaboration/collaboration.html">Collaboration</a></li>
-    </ul>
-</nav>
 
 <img src="Images/Imagen1.jpg" alt="Main Image" class="main-image">
 
