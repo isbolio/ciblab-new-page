@@ -182,3 +182,63 @@ footer a {
     height: 20px;
     margin-right: 8px;
 }
+
+/* Media Queries para responsividad */
+
+/* Dispositivos pequeños: Smartphones en orientación vertical */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .team-container {
+        grid-template-columns: 1fr; /* Una sola columna */
+        gap: 15px;
+    }
+
+    .team-member {
+        padding: 10px;
+    }
+
+    .profile-container {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .profile-img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    footer {
+        font-size: 12px;
+        padding: 5px;
+        flex-wrap: wrap;
+    }
+}
+
+/* Tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .team-container {
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    }
+
+    .team-member {
+        padding: 12px;
+    }
+
+    .profile-container {
+        flex-direction: row;
+        padding: 20px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}

@@ -20,7 +20,7 @@ header img {
     width: 50px;
     height: 50px;
     cursor: pointer;
-    border-radius: 50%;
+    border-radius: 50%; /* Imagen circular */
 }
 
 nav ul {
@@ -175,4 +175,72 @@ footer a {
 .footer-icon {
     width: 30px;
     height: 30px;
+}
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+    /* Ajustes en el header */
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* Cambiar el layout de las publicaciones */
+    .publications {
+        grid-template-columns: 1fr 1fr; /* 2 columnas en pantallas medianas */
+    }
+
+    /* Ajustar el tamaño de las imágenes */
+    .publication-card img {
+        width: 80%;
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    /* Hacer que las tarjetas de mosaico ocupen el 100% */
+    .mosaic-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* Cambiar la fuente en los botones */
+    .filters button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    /* Ajustar el tamaño de las tarjetas */
+    .publication-card, .mosaic-item {
+        padding: 10px;
+    }
+
+    /* Ajustes en el footer */
+    footer {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Ajustes en el header */
+    header {
+        padding: 15px;
+        text-align: center;
+    }
+
+    /* Cambiar las columnas a una sola */
+    .publications, .mosaic {
+        grid-template-columns: 1fr;
+    }
+
+    /* Hacer que los botones de filtros ocupen todo el ancho */
+    .filters {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /* Ajustar tamaños y márgenes en las tarjetas */
+    .publication-card, .mosaic-item {
+        padding: 12px;
+        margin: 10px 0;
+    }
 }
