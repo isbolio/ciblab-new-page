@@ -1,0 +1,94 @@
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Sección de eventos */
+.events-section {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Evento Principal */
+.event-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.event-info {
+    max-width: 400px;
+    text-align: left;
+}
+
+.event-info h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.event-date {
+    font-size: 1.2rem;
+    color: #ff5722;
+    margin-bottom: 10px;
+}
+
+.event-description {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Imagen del evento (Flyer) */
+.event-flyer {
+    display: block;
+    width: 250px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.event-flyer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.event-flyer:hover {
+    transform: scale(1.05);
+}
+
+/* Sección Coming Soon */
+.coming-soon-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.coming-soon-card {
+    width: 200px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    background: #ddd;
+    border-radius: 10px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.coming-soon-card:hover {
+    background: #ff5722;
+    color: white;
+    transform: scale(1.05);
+}

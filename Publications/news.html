@@ -3,75 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News</title>
+    <title>Events</title>
     <link rel="stylesheet" href="../style.css">
-    <style>
-        .search-bar {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin-bottom: 20px;
-        }
-
-        .search-bar input {
-            flex: 1;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        .filters {
-            display: flex;
-            gap: 10px;
-        }
-
-        .filters button {
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            background-color: #f9f9f9;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        .filters button:hover {
-            background-color: #ddd;
-        }
-
-        .publications {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-        }
-
-        .publication-card {
-            padding: 15px;
-            border: 1px solid #ccc;
-            border-radius: 10px;
-            background-color: #fff;
-            transition: box-shadow 0.3s;
-        }
-
-        .publication-card:hover {
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        }
-
-        .publication-card h3 {
-            margin: 0 0 10px;
-        }
-
-        .publication-card p {
-            margin: 5px 0;
-            font-size: 0.9em;
-            color: #555;
-        }
-
-        .publication-card .preview {
-            margin-top: 10px;
-            font-size: 0.9em;
-            color: #333;
-        }
-    </style>
+    <link rel="stylesheet" href="news.css">
 </head>
 <body>
 
@@ -91,41 +25,26 @@
     </nav>
 </header>
 
-<div class="content">
-    <h1>Publications</h1>
+<main class="events-section">
+    <h1>Events</h1>
 
-    <div class="search-bar">
-        <input type="text" placeholder="Search for publications...">
-        <div class="filters">
-            <button>Category</button>
-            <button>Date</button>
+    <div class="event-container">
+        <div class="event-info">
+            <h2>AI & Robotics Conference</h2>
+            <p class="event-date">📅 February 20, 2025</p>
+            <p class="event-description">Join industry experts to explore the latest advances in artificial intelligence and robotics.</p>
         </div>
+        <a href="https://example.com/event" target="_blank" class="event-flyer">
+            <img src="../Images/event-flyer.jpg" alt="Event Flyer">
+        </a>
     </div>
 
-    <div class="publications">
-        <div class="publication-card">
-            <h3>Optimizing Agricultural Resources</h3>
-            <p><strong>Author:</strong> Dr. A. Smith</p>
-            <p><strong>Date:</strong> January 2024</p>
-            <p><strong>Category:</strong> Agronomy</p>
-            <p class="preview">This study presents innovative techniques using AI to optimize water and fertilizer usage in agriculture.</p>
-        </div>
-        <div class="publication-card">
-            <h3>Advances in Robotic Simulations</h3>
-            <p><strong>Author:</strong> Dr. J. Doe</p>
-            <p><strong>Date:</strong> December 2023</p>
-            <p><strong>Category:</strong> Robotics</p>
-            <p class="preview">A comprehensive guide to improving human-robot interactions in industrial environments.</p>
-        </div>
-        <div class="publication-card">
-            <h3>AI for Early Disease Detection</h3>
-            <p><strong>Author:</strong> Dr. M. Lee</p>
-            <p><strong>Date:</strong> November 2023</p>
-            <p><strong>Category:</strong> Medicine</p>
-            <p class="preview">Exploring AI tools for assisting in the early diagnosis of critical illnesses.</p>
-        </div>
+    <div class="coming-soon-container">
+        <div class="coming-soon-card">Coming Soon</div>
+        <div class="coming-soon-card">Coming Soon</div>
+        <div class="coming-soon-card">Coming Soon</div>
     </div>
-</div>
+</main>
 
 <footer>
     <a href="https://x.com/CIBLab" target="_blank">
