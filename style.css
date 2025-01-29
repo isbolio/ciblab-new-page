@@ -178,12 +178,12 @@ footer a {
 } 
 
 .icon {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
+    width: 24px; /* Ajusta según el tamaño de tus imágenes */
+    height: 24px;
+    margin-right: 8px;
+    display: inline-block;
     vertical-align: middle;
 }
-
 
 
 
