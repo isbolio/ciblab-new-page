@@ -178,12 +178,12 @@ footer a {
 } 
 
 .icon {
-    width: 24px; /* Tamaño ajustado del ícono */
-    height: 24px;
-    margin-right: 8px; /* Espacio entre el ícono y el texto */
-    display: inline-block;
-    vertical-align: top; /* Alinea el ícono con la primera línea del texto */
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
 }
+
 
 
 
