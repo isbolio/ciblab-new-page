@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    background-color: #1c2e4a;;
+    background-color: #1c2e4a;
     color: #e0e0e0;
 }
 
@@ -17,7 +17,7 @@ body {
 
 h1 {
     font-size: 2.5rem;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 /* Evento Principal */
@@ -25,12 +25,12 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 40px;
     margin-bottom: 50px;
 }
 
 .event-info {
-    max-width: 400px;
+    max-width: 450px;
     text-align: left;
 }
 
@@ -48,30 +48,26 @@ h1 {
     color: #e0e0e0;
 }
 
+/* Aumentar tamaño de los textos generales */
 .event-description,
 .event-summary {
-    font-size: 1rem;
+    font-size: 1.2rem;  /* Antes: 1rem */
     color: white;
 }
 
-.event-topics {
-    list-style: none;
-    padding: 0;
-}
-
 .event-topics li {
-    font-size: 1rem;
-    margin-bottom: 5px;
+    font-size: 1.2rem;  /* Antes: 1rem */
+    margin-bottom: 8px;
     background: rgba(255, 255, 255, 0.1);
-    padding: 5px;
+    padding: 8px;
     border-radius: 5px;
 }
 
 /* Imagen del evento (Flyer) */
 .event-flyer {
     display: block;
-    width: 250px;
-    height: 350px;
+    width: 300px;  /* Antes: 250px */
+    height: 400px; /* Antes: 350px */
     overflow: hidden;
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
@@ -91,16 +87,16 @@ h1 {
 .coming-soon-container {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
 }
 
 .coming-soon-card {
-    width: 200px;
-    height: 150px;
+    width: 250px;  /* Antes: 200px */
+    height: 180px; /* Antes: 150px */
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.2rem;
+    font-size: 1.4rem;  /* Antes: 1.2rem */
     background: #444;
     border-radius: 10px;
     transition: background 0.3s, transform 0.3s;
@@ -112,6 +108,7 @@ h1 {
     transform: scale(1.05);
 }
 
+/* Iconos en Fecha y Ubicación */
 .event-date img,
 .event-location img {
     width: 20px;
@@ -125,7 +122,7 @@ h1 {
 }
 
 .upcoming-text {
-    font-size: 0.9rem;
+    font-size: 1rem; /* Antes: 0.9rem */
     color: white;
     margin-top: 5px;
 }
