@@ -23,10 +23,17 @@ h1 {
 /* Evento Principal */
 .event-container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     gap: 40px;
     margin-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+    .event-container {
+        flex-direction: row;
+        justify-content: center;
+    }
 }
 
 .event-info {
@@ -51,12 +58,17 @@ h1 {
 /* Aumentar tamaño de los textos generales */
 .event-description,
 .event-summary {
-    font-size: 1.2rem;  /* Antes: 1rem */
+    font-size: 1.2rem;
     color: white;
 }
 
+.event-topics {
+    padding: 0;
+    list-style: none;
+}
+
 .event-topics li {
-    font-size: 1.2rem;  /* Antes: 1rem */
+    font-size: 1.2rem;
     margin-bottom: 8px;
     background: rgba(255, 255, 255, 0.1);
     padding: 8px;
@@ -66,8 +78,8 @@ h1 {
 /* Imagen del evento (Flyer) */
 .event-flyer {
     display: block;
-    width: 300px;  /* Antes: 250px */
-    height: 400px; /* Antes: 350px */
+    width: 300px;
+    height: 400px;
     overflow: hidden;
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
@@ -86,13 +98,14 @@ h1 {
 /* Sección Coming Soon */
 .coming-soon-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
 }
 
 .coming-soon-card {
-    width: 250px;  /* Antes: 200px */
-    height: 300px; /* Antes: 150px */
+    width: 250px;
+    height: 300px;
     border: 1px solid #ddd;
     display: flex;
     flex-direction: column;
@@ -118,12 +131,11 @@ h1 {
 
 /* Texto debajo de la imagen */
 .upcoming-text {
-    font-size: 1rem; /* Antes: 0.9rem */
+    font-size: 1rem;
     color: white;
     text-align: center;
     margin-top: 5px;
 }
-
 
 .coming-soon-card:hover {
     background: #778da9;
@@ -142,10 +154,4 @@ h1 {
     font-size: 1.8rem;
     margin-top: 30px;
     color: white;
-}
-
-.upcoming-text {
-    font-size: 1rem; /* Antes: 0.9rem */
-    color: white;
-    margin-top: 5px;
 }
