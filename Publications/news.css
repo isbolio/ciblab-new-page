@@ -78,11 +78,12 @@ h1 {
 /* Imagen del evento (Flyer) */
 .event-flyer {
     display: block;
-    width: 300px;
-    height: 400px;
+    width: 400px;
+    height: 500px;
     overflow: hidden;
     border-radius: 10px;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out; 
+    margin: 0 auto;
 }
 
 .event-flyer img {
