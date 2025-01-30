@@ -95,13 +95,35 @@ h1 {
     height: 300px; /* Antes: 150px */
     border: 1px solid #ddd;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    font-size: 1.4rem;  /* Antes: 1.2rem */
+    justify-content: space-between;
     background: #2a3b55;
     border-radius: 10px;
     transition: background 0.3s, transform 0.3s;
+    padding: 10px;
 }
+
+.coming-soon-card img {
+    width: 100%;
+    height: 85%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.coming-soon-card:hover {
+    background: #778da9;
+    transform: scale(1.05);
+}
+
+/* Texto debajo de la imagen */
+.upcoming-text {
+    font-size: 1rem; /* Antes: 0.9rem */
+    color: white;
+    text-align: center;
+    margin-top: 5px;
+}
+
 
 .coming-soon-card:hover {
     background: #778da9;
