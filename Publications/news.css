@@ -92,18 +92,19 @@ h1 {
 
 .coming-soon-card {
     width: 250px;  /* Antes: 200px */
-    height: 180px; /* Antes: 150px */
+    height: 300px; /* Antes: 150px */
+    border: 1px solid #ddd;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.4rem;  /* Antes: 1.2rem */
-    background: #444;
+    background: #2a3b55;
     border-radius: 10px;
     transition: background 0.3s, transform 0.3s;
 }
 
 .coming-soon-card:hover {
-    background: #ff5722;
+    background: #778da9;
     color: white;
     transform: scale(1.05);
 }
