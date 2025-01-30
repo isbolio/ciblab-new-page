@@ -1,11 +1,11 @@
 /* Estilos Generales */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
-    background-color: #121212;
-    color: white;
+    background-color: #1c2e4a;;
+    color: #e0e0e0;
 }
 
 /* Sección de eventos */
@@ -37,7 +37,7 @@ h1 {
 .event-info h2 {
     font-size: 1.8rem;
     margin-bottom: 10px;
-    color: #ffcc00;
+    color: #e0e0e0;
 }
 
 .event-date,
@@ -45,7 +45,7 @@ h1 {
     font-size: 1.2rem;
     font-weight: bold;
     margin-bottom: 10px;
-    color: #ff5722;
+    color: #e0e0e0;
 }
 
 .event-description,
@@ -110,4 +110,22 @@ h1 {
     background: #ff5722;
     color: white;
     transform: scale(1.05);
+}
+
+.event-date img,
+.event-location img {
+    width: 20px;
+    vertical-align: middle;
+}
+
+.upcoming-events-title {
+    font-size: 1.8rem;
+    margin-top: 30px;
+    color: white;
+}
+
+.upcoming-text {
+    font-size: 0.9rem;
+    color: white;
+    margin-top: 5px;
 }
