@@ -119,10 +119,11 @@ h1 {
 }
 
 .coming-soon-card img {
-    width: 90%;
+    width: 100%;
     height: 85%;
-    object-fit: cover;
-    border-radius: 8px;
+    object-fit: contain;
+    border-radius: 8px; 
+    background-color: #e0e0e0;
 }
 
 .coming-soon-card:hover {
