@@ -13,6 +13,8 @@ body {
     max-width: 900px;
     margin: 50px auto;
     padding: 20px;
+    padding-top: 20px; /* Asegura un poco de espacio inicial */
+    margin-top: 40px; /* Añade espacio extra antes del contenido principal */
 }
 
 h1 {
@@ -99,6 +101,7 @@ h1 {
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
+    margin-bottom: 50px; /* Añadido más espacio debajo de las cartas */
 }
 
 .coming-soon-card {
