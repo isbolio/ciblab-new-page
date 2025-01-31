@@ -105,8 +105,8 @@ h1 {
 }
 
 .coming-soon-card {
-    width: 250px;
-    height: 300px;
+    width: 300px;
+    height: 400px;
     border: 1px solid #ddd;
     display: flex;
     flex-direction: column;
