@@ -28,7 +28,6 @@
 <main class="events-section">
     <h1>Upcoming Events</h1>
     <div class="coming-soon-container">
-        <!-- Primera tarjeta con evento -->
         <div class="coming-soon-card" onclick="scrollToEvent()">
             <img src="../Images/logo trajectories.png" alt="Upcoming Event">
             <p class="upcoming-text">Trajectories Conference</p>
@@ -46,7 +45,7 @@
     <!-- Sección de información del evento con ID -->
     <div class="event-container" id="event-info">
         <div class="event-info">
-            <h2>¡Trajectories Conference 2025! </h2>
+            <h2>¡Trajectories Conference 2025!</h2>
             <p class="event-date">
                 <img src="../Images/calendar.png" alt="Calendar Icon" class="icon"> 19-21 March
             </p>
@@ -66,11 +65,10 @@
                 addressing technological challenges and opportunities in automation, healthcare, and smart systems.
             </p>
         </div>
+        <div class="event-flyer">
+            <img src="../Images/flyer.jpeg" alt="Event Flyer" onclick="expandFlyer(this)">
+        </div>
     </div>
-    
-    <a href="https://sites.google.com/academicos.udg.mx/trajectories2025" target="_blank" class="event-flyer">
-        <img src="../Images/flyer.jpeg" alt="Event Flyer">
-    </a>
 </main>
 
 <footer>
@@ -84,6 +82,31 @@
 <script>
     function scrollToEvent() {
         document.getElementById("event-info").scrollIntoView({ behavior: "smooth" });
+    }
+
+    function expandFlyer(imgElement) {
+        const modal = document.createElement("div");
+        modal.style.position = "fixed";
+        modal.style.top = "0";
+        modal.style.left = "0";
+        modal.style.width = "100vw";
+        modal.style.height = "100vh";
+        modal.style.backgroundColor = "rgba(0, 0, 0, 0.8)";
+        modal.style.display = "flex";
+        modal.style.alignItems = "center";
+        modal.style.justifyContent = "center";
+        modal.style.zIndex = "1000";
+
+        const img = document.createElement("img");
+        img.src = imgElement.src;
+        img.style.maxWidth = "90%";
+        img.style.maxHeight = "90%";
+        img.style.borderRadius = "10px";
+
+        modal.appendChild(img);
+        modal.onclick = () => document.body.removeChild(modal); // Cierra al hacer clic
+
+        document.body.appendChild(modal);
     }
 </script>
 
