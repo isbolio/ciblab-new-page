@@ -28,6 +28,7 @@
 <main class="events-section">
     <h1>Upcoming Events</h1>
     <div class="coming-soon-container">
+        <!-- Primera tarjeta con evento -->
         <div class="coming-soon-card" onclick="scrollToEvent()">
             <img src="../Images/logo trajectories.png" alt="Upcoming Event">
             <p class="upcoming-text">Trajectories Conference</p>
@@ -45,7 +46,7 @@
     <!-- Sección de información del evento con ID -->
     <div class="event-container" id="event-info">
         <div class="event-info">
-            <h2>¡Trajectories Conference 2025!</h2>
+            <h2>¡Trajectories Conference 2025! </h2>
             <p class="event-date">
                 <img src="../Images/calendar.png" alt="Calendar Icon" class="icon"> 19-21 March
             </p>
@@ -69,6 +70,11 @@
             <img src="../Images/flyer.jpeg" alt="Event Flyer" onclick="expandFlyer(this)">
         </div>
     </div>
+
+    <!-- Botón "Learn More" -->
+    <div class="learn-more-container">
+        <a href="https://sites.google.com/academicos.udg.mx/trajectories2025" target="_blank" class="learn-more-button">Learn More</a>
+    </div>
 </main>
 
 <footer>
@@ -84,29 +90,30 @@
         document.getElementById("event-info").scrollIntoView({ behavior: "smooth" });
     }
 
-    function expandFlyer(imgElement) {
-        const modal = document.createElement("div");
-        modal.style.position = "fixed";
-        modal.style.top = "0";
-        modal.style.left = "0";
-        modal.style.width = "100vw";
-        modal.style.height = "100vh";
-        modal.style.backgroundColor = "rgba(0, 0, 0, 0.8)";
-        modal.style.display = "flex";
-        modal.style.alignItems = "center";
-        modal.style.justifyContent = "center";
-        modal.style.zIndex = "1000";
+    function expandFlyer(img) {
+        const expandedImg = document.createElement("div");
+        expandedImg.style.position = "fixed";
+        expandedImg.style.top = 0;
+        expandedImg.style.left = 0;
+        expandedImg.style.width = "100%";
+        expandedImg.style.height = "100%";
+        expandedImg.style.backgroundColor = "rgba(0, 0, 0, 0.8)";
+        expandedImg.style.display = "flex";
+        expandedImg.style.alignItems = "center";
+        expandedImg.style.justifyContent = "center";
+        expandedImg.style.zIndex = 1000;
 
-        const img = document.createElement("img");
-        img.src = imgElement.src;
-        img.style.maxWidth = "90%";
-        img.style.maxHeight = "90%";
-        img.style.borderRadius = "10px";
+        const imgClone = document.createElement("img");
+        imgClone.src = img.src;
+        imgClone.style.maxWidth = "90%";
+        imgClone.style.maxHeight = "90%";
+        imgClone.style.borderRadius = "10px";
 
-        modal.appendChild(img);
-        modal.onclick = () => document.body.removeChild(modal); // Cierra al hacer clic
+        expandedImg.appendChild(imgClone);
 
-        document.body.appendChild(modal);
+        expandedImg.onclick = () => document.body.removeChild(expandedImg);
+
+        document.body.appendChild(expandedImg);
     }
 </script>
 
