@@ -44,12 +44,11 @@ nav ul li a {
     margin: 0 auto; /* Centrar contenido */
 }
 
-h1 {
+.content h1 {
     text-align: center;
     color: #fff;
-    font-size: 3rem; /* Aumenta el tamaño del texto */
+    font-size: 2.5rem; /* Aumenta el tamaño del texto */
     font-weight: bold; /* Hace que el texto sea más grueso */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Agrega una sombra para mejor visibilidad */
     /*margin-top: 20px; Agrega margen superior */
 }
 
