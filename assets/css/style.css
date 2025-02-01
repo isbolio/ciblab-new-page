@@ -52,6 +52,9 @@ h1 {
 .team-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajusta el tamaño de las columnas automáticamente */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra las tarjetas dentro del contenedor */
     gap: 20px; /* Espaciado uniforme entre tarjetas */
     padding: 20px; /* Espaciado interno para evitar que queden pegadas al borde */
 }
@@ -62,6 +65,9 @@ h1 {
 }
 
 .team-member {
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos estén en columna */
+    align-items: center; /* Centra el contenido horizontalmente */
     text-align: center;
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -85,7 +91,7 @@ h1 {
     height: 100px;
     object-fit: cover;
     margin-bottom: 10px;
-    transition: transform 0.3s ease;
+    display: block; /* Asegura que el margin auto funcione */
 }
 
 .team-member:hover img {
