@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Computer Intelligence and Biorobotics Lab</title>
+    <style>
+        /* Estilos adicionales para el menú de hamburguesa */
+        #mobile-menu {
+            transition: transform 0.3s ease-in-out;
+        }
+        #mobile-menu.hidden {
+            transform: translateX(-100%);
+        }
+    </style>
 </head>
 <body class="bg-[#1c2e4a] text-gray-200 text-center font-roboto">
     <!-- Header -->
@@ -12,8 +21,15 @@
         <a href="index.html">
             <img src="Images/Imagen1.jpg" alt="Logo" class="w-12 h-12 cursor-pointer rounded-full">
         </a>
-        <nav>
-            <ul class="flex gap-4">
+        <!-- Botón de hamburguesa para móviles -->
+        <button id="menu-toggle" class="md:hidden focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+        <!-- Menú de navegación -->
+        <nav class="hidden md:flex gap-4">
+            <ul class="flex flex-col md:flex-row gap-4">
                 <li><a href="index.html" class="text-white font-bold no-underline">Home</a></li>
                 <li><a href="Team/team.html" class="text-white font-bold no-underline">Team</a></li>
                 <li><a href="Research/research.html" class="text-white font-bold no-underline">Research</a></li>
@@ -24,10 +40,21 @@
         </nav>
     </header>
 
-    <!-- Main Image -->
+    <!-- Menú móvil (oculto por defecto) -->
+    <div id="mobile-menu" class="fixed inset-y-0 left-0 w-64 bg-[#7f7fa8] text-gray-800 p-5 transform -translate-x-full md:hidden">
+        <ul class="flex flex-col gap-4">
+            <li><a href="index.html" class="text-white font-bold no-underline">Home</a></li>
+            <li><a href="Team/team.html" class="text-white font-bold no-underline">Team</a></li>
+            <li><a href="Research/research.html" class="text-white font-bold no-underline">Research</a></li>
+            <li><a href="Publications/news.html" class="text-white font-bold no-underline">News</a></li>
+            <li><a href="Contact/contact.html" class="text-white font-bold no-underline">Contact</a></li>
+            <li><a href="Collaboration/collaboration.html" class="text-white font-bold no-underline">Collaboration</a></li>
+        </ul>
+    </div>
+
+    <!-- Resto del contenido -->
     <img src="Images/Imagen1.jpg" alt="Main Image" class="w-72 h-72 rounded-full object-cover mx-auto my-5">
 
-    <!-- Content -->
     <div class="max-w-4xl mx-auto px-5 py-5 text-left">
         <h1 class="text-3xl font-bold mb-5 text-center">Welcome to the Computer Intelligence and Biorobotics Lab</h1>
         <div class="mb-5">
@@ -59,5 +86,15 @@
         </a>
         <p class="text-sm mt-2">The CIBLab Website</p>
     </footer>
+
+    <!-- Script para manejar el menú de hamburguesa -->
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
