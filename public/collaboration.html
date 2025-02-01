@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Collaboration</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        /* Estilos adicionales para el menú de hamburguesa */
+        #mobile-menu {
+            transition: transform 0.3s ease-in-out;
+            transform: translateY(-100%);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: #7f7fa8;
+            z-index: 10;
+        }
+        #mobile-menu.open {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="../index.html">
+        <img src="../Images/Imagen1.jpg" alt="Logo">
+    </a>
+    <!-- Botón de hamburguesa para móviles -->
+    <button id="menu-hamburguesa" style="z-index: 101;" class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+    </button>
+</header>
+
+<div class="content">
+    <h1>Collaboration</h1>
+    <p>Utiliza esta sección para describir la misión, visión y objetivos del equipo o proyecto. Puedes modificar este contenido de acuerdo a la información que deseas mostrar sobre tu organización.</p>
+</div>
+
+<footer>
+    <a href="https://x.com/CIBLab" target="_blank">
+        <img src="../Images/twitter_logo.jpg" alt="Twitter" class="footer-icon">
+    </a>
+    <p>The CIBLab Website</p>
+</footer>
+
+    <script src="../assets/js/menu-public.js"></script>
+
+</body>
+</html>

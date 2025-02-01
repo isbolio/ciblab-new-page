@@ -29,35 +29,12 @@
             <img src="Images/Imagen1.jpg" alt="Logo" class="w-12 h-12 cursor-pointer rounded-full">
         </a>
         <!-- Botón de hamburguesa para móviles -->
-        <button id="menu-toggle" style="z-index: 101;" class="md:hidden focus:outline-none">
+        <button id="menu-hamburguesa" style="z-index: 101;" class="md:hidden focus:outline-none">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
             </svg>
         </button>
-        <!-- Menú de navegación -->
-        <nav class="hidden md:flex gap-4">
-            <ul class="flex flex-col md:flex-row gap-4">
-                <li><a href="index.html" class="text-white font-bold no-underline">Home</a></li>
-                <li><a href="Team/team.html" class="text-white font-bold no-underline">Team</a></li>
-                <li><a href="Research/research.html" class="text-white font-bold no-underline">Research</a></li>
-                <li><a href="Publications/news.html" class="text-white font-bold no-underline">News</a></li>
-                <li><a href="Contact/contact.html" class="text-white font-bold no-underline">Contact</a></li>
-                <li><a href="Collaboration/collaboration.html" class="text-white font-bold no-underline">Collaboration</a></li>
-            </ul>
-        </nav>
     </header>
-
-    <!-- Menú móvil (oculto por defecto) -->
-    <div id="mobile-menu" class="p-5">
-        <ul class="flex flex-col gap-4">
-            <li><a href="index.html" class="text-white font-bold no-underline">Home</a></li>
-            <li><a href="Team/team.html" class="text-white font-bold no-underline">Team</a></li>
-            <li><a href="Research/research.html" class="text-white font-bold no-underline">Research</a></li>
-            <li><a href="Publications/news.html" class="text-white font-bold no-underline">News</a></li>
-            <li><a href="Contact/contact.html" class="text-white font-bold no-underline">Contact</a></li>
-            <li><a href="Collaboration/collaboration.html" class="text-white font-bold no-underline">Collaboration</a></li>
-        </ul>
-    </div>
 
     <!-- Resto del contenido -->
     <img src="Images/Imagen1.jpg" alt="Main Image" class="w-72 h-72 rounded-full object-cover mx-auto my-5">
@@ -94,14 +71,7 @@
         <p class="text-sm mt-2">The CIBLab Website</p>
     </footer>
 
-    <!-- Script para manejar el menú de hamburguesa -->
-    <script>
-        const menuToggle = document.getElementById('menu-toggle');
-        const mobileMenu = document.getElementById('mobile-menu');
-
-        menuToggle.addEventListener('click', () => {
-            mobileMenu.classList.toggle('open'); 
-        });
-    </script>
+    <!-- Incluir el archivo JavaScript del menú -->
+    <script src="assets/js/menu.js"></script>
 </body>
 </html>

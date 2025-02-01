@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>News</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../assets/css/news.css"> 
+    <style>
+        /* Estilos adicionales para el menú de hamburguesa */
+        #mobile-menu {
+            transition: transform 0.3s ease-in-out;
+            transform: translateY(-100%);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: #7f7fa8;
+            z-index: 10;
+        }
+        #mobile-menu.open {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="index.html">
+        <img src="../Images/Imagen1.jpg" alt="Logo">
+    </a>
+    <!-- Botón de hamburguesa para móviles -->
+    <button id="menu-hamburguesa" style="z-index: 101;" class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+    </button>
+</header>
+
+<main class="events-section">
+    <h1>Upcoming Events</h1>
+    <div class="coming-soon-container">
+        <!-- Primera tarjeta con evento -->
+        <div class="coming-soon-card" onclick="scrollToEvent()">
+            <img src="../Images/logo trajectories.png" alt="Upcoming Event">
+            <p class="upcoming-text">Trajectories Conference</p>
+        </div>
+        <div class="coming-soon-card">
+            <img src="../Images/fondo4.png" alt="Upcoming Event">
+            <p class="upcoming-text">Upcoming Event</p>
+        </div>
+        <div class="coming-soon-card">
+            <img src="../Images/fondo4.png" alt="Upcoming Event">
+            <p class="upcoming-text">Upcoming Event</p>
+        </div>
+    </div>
+    
+    <!-- Sección de información del evento con ID -->
+    <div class="event-container" id="event-info">
+        <div class="event-info">
+            <h2>¡Trajectories Conference 2025! </h2>
+            <p class="event-date">
+                <img src="../Images/calendar.png" alt="Calendar Icon" class="icon"> 19-21 March
+            </p>
+            <p class="event-location">
+                <img src="../Images/marcador-de-posicion.png" alt="Location Icon" class="icon"> CUCEI, Universidad de Guadalajara
+            </p>
+            <p class="event-description">
+                This conference will focus on the latest advancements in Artificial Intelligence and Biorobotics, with discussions on:
+            </p>
+            <ul class="event-topics">
+                <li>🤖 Computational Intelligence and Biorobotics</li>
+                <li>🔬 Cyber-Human Innovation and Technological Management</li>
+                <li>🌐 Cyber-Physical Systems</li>
+            </ul>
+            <p class="event-summary">
+                Industry leaders, researchers, and innovators will share insights on the impact of AI and robotics on modern industries, 
+                addressing technological challenges and opportunities in automation, healthcare, and smart systems.
+            </p>
+        </div>
+        <div class="event-flyer">
+            <img src="../Images/flyer.jpeg" alt="Event Flyer" onclick="expandFlyer(this)">
+        </div>
+    </div>
+
+    <!-- Botón "Learn More" -->
+    <div class="learn-more-container">
+        <a href="https://sites.google.com/academicos.udg.mx/trajectories2025" target="_blank" class="learn-more-button">Learn More</a>
+    </div>
+</main>
+
+<footer>
+    <a href="https://x.com/CIBLab" target="_blank">
+        <img src="../Images/twitter_logo.jpg" alt="Twitter" class="footer-icon">
+    </a>
+    <p>The CIBLab Website</p>
+</footer>
+
+<!-- Script para el desplazamiento -->
+<script>
+    function scrollToEvent() {
+        document.getElementById("event-info").scrollIntoView({ behavior: "smooth" });
+    }
+
+    function expandFlyer(img) {
+        const expandedImg = document.createElement("div");
+        expandedImg.style.position = "fixed";
+        expandedImg.style.top = 0;
+        expandedImg.style.left = 0;
+        expandedImg.style.width = "100%";
+        expandedImg.style.height = "100%";
+        expandedImg.style.backgroundColor = "rgba(0, 0, 0, 0.8)";
+        expandedImg.style.display = "flex";
+        expandedImg.style.alignItems = "center";
+        expandedImg.style.justifyContent = "center";
+        expandedImg.style.zIndex = 1000;
+
+        const imgClone = document.createElement("img");
+        imgClone.src = img.src;
+        imgClone.style.maxWidth = "90%";
+        imgClone.style.maxHeight = "90%";
+        imgClone.style.borderRadius = "10px";
+
+        expandedImg.appendChild(imgClone);
+
+        expandedImg.onclick = () => document.body.removeChild(expandedImg);
+
+        document.body.appendChild(expandedImg);
+    }
+</script>
+
+<script src="../assets/js/menu-public.js"></script>
+
+</body>
+</html>

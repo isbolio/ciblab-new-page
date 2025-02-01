@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Team</title>
+    <link rel="stylesheet" href="../assets/css/style.css"> 
+    <style>
+        /* Estilos adicionales para el menú de hamburguesa */
+        #mobile-menu {
+            transition: transform 0.3s ease-in-out;
+            transform: translateY(-100%);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: #7f7fa8;
+            z-index: 10;
+        }
+        #mobile-menu.open {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <a href="../index.html">
+            <img src="../Images/Imagen1.jpg" alt="Logo">
+        </a> 
+        <!-- Botón de hamburguesa para móviles -->
+        <button id="menu-hamburguesa" style="z-index: 101;" class="md:hidden focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+        
+    </header>
+
+    <div class="content">
+        <h1>Our Team</h1>
+        <div class="team-container">
+            <a href="Professors/omar.html" class="team-link">
+                <div class="team-member">
+                    <img src="../Images/Omar Foto.jpg" alt="Miembro 4">
+                    <h3>Dr. Omar Avalos Alvarez</h3>
+                    <p>Associate Profesor</p>
+                    <p>Specialized in Evolutionary Computation and Image Processing.</p>
+                </div>
+            </a>
+            <a href="Professors/jose.html" class="team-link">
+                <div class="team-member">
+                    <img src="../Images/Octavio_Camarena.jpg" alt="Miembro 3">
+                    <h3>Dr. José Octavio Camarena Méndez</h3>
+                    <p>Associate Profesor</p>
+                    <p>Specialized in Robotic Vision and Optimization Algorithms.</p>
+                </div>
+            </a>
+            <a href="Professors/primitivo.html" class="team-link">
+                <div class="team-member">
+                    <img src="../Images/PrimitivoDiaz.jpg" alt="Miembro 1">
+                    <h3>Dr. Primitivo Emanuel Díaz Guerrero</h3>
+                    <p>Associate Profesor</p>
+                    <p>Specialized in Machine Learning, Data Science, and Computer Vision.</p>
+                </div>
+            </a>
+            <a href="Professors/salvador.html" class="team-link">
+                <div class="team-member">
+                    <img src="../Images/SalvadorHinojosa.jpg" alt="Miembro 1">
+                    <h3>Dr. Salvador Miguel Hinojosa Cervantes</h3>
+                    <p>Associate Profesor</p>
+                    <p>Specialized in Metaheuristics and Computer Vision.</p>
+                </div>
+            </a>
+            <a href="Professors/jorgegalvez.html" class="team-link">
+                <div class="team-member">
+                    <img src="../Images/JorgeGalvez.jpg" alt="Miembro 2">
+                    <h3>Dr. Jorge de Jesús Gálvez Rodríguez</h3>
+                    <p>Associate Professor</p>
+                    <p>Specialized in Machine Learning, Data Science, and Computer Vision.</p>
+                </div>
+            </a> 
+            <a href="Professors/wario.html" class="team-link">
+                <div class="team-member">
+                    <img src="../Images/Profile_2.jpg" alt="Miembro 1">
+                    <h3>Dr. Fernando Wario Vázquez</h3>
+                    <p>Associate Profesor</p>
+                    <p>Specialized in Computational Ethology and Swarm Intelligence.</p>
+                </div>
+            </a>
+        </div>
+
+        <h1 style="margin-top: 40px;">Graduate Students</h1>
+        <div class="team-container">
+            <a href="Graduate Students/rommelantunez.html" class="team-link">
+                <div class="team-member">
+                    <img src="../Images/GS images/foto rommel.jpg" alt="Estudiante Graduado 1" >
+                    <h3>Rommel Antúnez Barrios</h3>
+                    <p>Research Collaborator</p>
+                    <p>B.Sc. in Computer Science</p>
+                </div>
+            </a>
+            <a href="Graduate Students/milagroscontreras.html" class="team-link">
+                <div class="team-member">
+                    <img src="../Images/GS images/Milagros.jpg" alt="Estudiante Graduado 2">
+                    <h3>Milagros Contreras Elizalde</h3>
+                    <p>Research Collaborator</p>
+                    <p>B.Sc. in Communications and Electronics</p>
+                </div>
+            </a>
+            <a href="Graduate Students/gabrielcontreras.html" class="team-link">
+                <div class="team-member">
+                    <img src="../Images/GS images/mi_foto.jpeg" alt="Estudiante Graduado 3">
+                    <h3>Gabriel Contreras García</h3>
+                    <p>Research Collaborator</p>
+                    <p>B.Sc. in Computer Science</p>
+                </div>
+            </a>
+            <a href="Graduate Students/jorgedavila.html" class="team-link">
+                <div class="team-member">
+                    <img src="../Images/GS images/foto - JLDG.jpg" alt="Estudiante Graduado 3">
+                    <h3>Jorge Luis Dávila Guerrero</h3> 
+                    <p>Research Collaborator</p>
+                    <p>Ph.D. Student in Computer Intelligence</p>
+                </div>
+            </a>
+            <a href="Graduate Students/edgardominguez.html" class="team-link">
+                <div class="team-member">
+                    <img src="../Images/GS images/foto-edgar.jpeg" alt="Estudiante Graduado 3">
+                    <h3>Edgar Alan Domínguez Murillo</h3>
+                    <p>Research Collaborator</p>
+                    <p>B.Sc. in Computer Science</p>
+                </div>
+            </a> 
+            <a href="Graduate Students/keniaesparza.html" class="team-link">
+                <div class="team-member">
+                    <img src="../Images/GS images/Profile_EsparzaKenia.JPG" alt="Estudiante Graduado 3">
+                    <h3>Kenia Jaqueline Esparza Duran</h3>
+                    <p>Research Collaborator</p>
+                    <p>B.Sc. in Computer Science</p>
+                </div>
+            </a> 
+            <a href="Graduate Students/wendyescamilla.html" class="team-link">
+                <div class="team-member">
+                    <img src="../Images/GS images/Foto.jpg" alt="Estudiante Graduado 3">
+                    <h3>Wendy Stefany Escamilla Valadez</h3>
+                    <p>Research Collaborator</p>
+                    <p>B.Sc. in Computer Science</p>
+                </div>
+            </a> 
+            <a href="Graduate Students/carlosfregoso.html" class="team-link">
+                <div class="team-member">
+                    <img src="../Images/GS images/Foto Carlos Alberto Fregoso Iturria.png" alt="Estudiante Graduado 3">
+                    <h3>Carlos Alberto Fregoso Iturria</h3>
+                    <p>Research Collaborator</p>
+                    <p>B.Sc. in Biomedic Engineering</p>
+                </div>
+            </a> 
+            <a href="Graduate Students/alejandraibarra.html" class="team-link">
+                <div class="team-member">
+                    <img src="../Images/GS images/alejandra foto.jpg" alt="Estudiante Graduado 3">
+                    <h3>Alejandra Ibarra Esquivias</h3>
+                    <p>Research Collaborator</p>
+                    <p>Master in Applied Computing</p>
+                </div>
+            </a> 
+            <a href="Graduate Students/kevinmorales.html" class="team-link">
+                <div class="team-member">
+                    <img src="../Images/GS images/kevin_cucei.jpg" alt="Estudiante Graduado 3">
+                    <h3>Kevin Kristop Morales Barranco</h3>
+                    <p>Research Collaborator</p>
+                    <p>Master in Applied Computing</p>
+                </div>
+            </a>
+            <a href="Graduate Students/alvaromuñoz.html" class="team-link">
+                <div class="team-member">
+                    <img src="../Images/GS images/IMG_2952.PNG" alt="Estudiante Graduado 3">
+                    <h3>Álvaro Alexis Muñoz Reynoso</h3>
+                    <p>Research Collaborator</p>
+                    <p>B.Sc. in Computer Science</p>
+                </div>
+            </a> 
+            <a href="Graduate Students/nayeliperez.html" class="team-link">
+                <div class="team-member">
+                    <img src="../Images/GS images/foto napp.jpg" alt="Estudiante Graduado 3">
+                    <h3>Nayeli Pérez Padilla</h3>
+                    <p>Research Collaborator</p>
+                    <p>Master in Biotechnological Innovation</p>
+                </div>
+            </a> 
+            <a href="Graduate Students/franciscosaldaña.html" class="team-link">
+                <div class="team-member">
+                    <img src="../Images/GS images/Mi_foto Francisco Javier.jpeg" alt="Estudiante Graduado 3">
+                    <h3>Francisco Javier de Jesús Saldaña de la Cruz</h3>
+                    <p>Research Collaborator</p>
+                    <p>Ph.D. student in Applied Computing</p>
+                </div>
+            </a> 
+            <a href="Graduate Students/heribertozapata.html" class="team-link">
+                <div class="team-member">
+                    <img src="../Images/GS images/foto_HZS.jpeg" alt="Estudiante Graduado 3">
+                    <h3>Heriberto Zapata Solano</h3>
+                    <p>Research Collaborator</p>
+                    <p>B.Sc. in Communications and Electronics</p>
+                </div>
+            </a>
+        </div>
+
+        <h1 style="margin-top: 40px;">Undergraduate Students</h1>
+        <div class="team-container">
+            <a href="Ungraduated-students/bolio.html" class="team-link">
+                <div class="team-member">
+                    <img src="../Images/bolio2.jpg" alt="Estudiante 2">
+                    <h3>Isaac Alejandro Bolio Mendoza</h3>
+                    <p>BCS Student</p>
+                </div>
+            </a>
+            <a href="Ungraduated-students/ernesto.html" class="team-link">
+                <div class="team-member">
+                    <img src="../Images/Ernesto_Mendoza_Martinez.png" alt="Estudiante 1">
+                    <h3>Ernesto Mendoza Martinez</h3>
+                    <p>BCS Student</p>
+                </div>
+            </a>
+            <a href="Ungraduated-students/kirpal.html" class="team-link">
+                <div class="team-member">
+                    <img src="../Images/foto - KDMR.jpeg" alt="Estudiante 3">
+                    <h3>Kirpal Dayal Muñoz Ramos</h3>
+                    <p>BCS Student</p>
+                </div>
+            </a>
+            <!-- Continúa con los demás estudiantes -->
+        </div>
+    </div>
+
+    <footer>
+        <a href="https://x.com/CIBLab" target="_blank">
+            <img src="../Images/twitter_logo.jpg" alt="Twitter" class="footer-icon">
+        </a>
+        <p>The CIBLab Website</p>
+    </footer>
+    <script src="../assets/js/menu-public.js"></script>
+    
+</body>
+
+</html>
