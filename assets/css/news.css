@@ -18,7 +18,9 @@ body {
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 3rem; /* Aumenta el tamaño del texto */
+    font-weight: bold; /* Hace que el texto sea más grueso */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     margin-bottom: 10px;
 }
 

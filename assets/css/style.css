@@ -47,7 +47,12 @@ nav ul li a {
 h1 {
     text-align: center;
     color: #fff;
+    font-size: 3rem; /* Aumenta el tamaño del texto */
+    font-weight: bold; /* Hace que el texto sea más grueso */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Agrega una sombra para mejor visibilidad */
+    /*margin-top: 20px; Agrega margen superior */
 }
+
 
 .team-container {
     display: grid;
