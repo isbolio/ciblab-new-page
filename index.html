@@ -3,150 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Computer Intelligence and Biorobotics Lab</title>
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #1c2e4a; /* Azul marino claro */
-            color: #e0e0e0;
-            text-align: center;
-        }
-
-        header {
-            background-color: #7f7fa8; /* Gris claro */
-            color: #333; /* Texto oscuro para contraste */
-            padding: 10px 20px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        header img {
-            width: 50px;
-            height: 50px;
-            cursor: pointer;
-            border-radius: 50%;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 15px;
-        }
-
-        nav ul li {
-            display: inline;
-        }
-
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .main-image {
-            width: 300px; /* Tamaño reducido */
-            height: 300px; /* Tamaño reducido */
-            border-radius: 50%; /* Recorte circular */
-            object-fit: cover; /* Asegura que la imagen se ajuste bien al círculo */
-            margin: 20px auto;
-            display: block;
-        }
-
-        .content {
-            padding: 20px;
-            max-width: 800px; /* Limitar ancho del texto */
-            margin: 0 auto; /* Centrar el texto en la página */
-            text-align: left; /* Alinear texto a la izquierda */
-        }
-
-        h1 {
-            font-size: 2rem; /* Tamaño más pequeño */
-            margin-bottom: 20px;
-            text-align: center; /* Centrar el título principal */
-        }
-
-        h2 {
-            font-size: 1.5rem; /* Tamaño más pequeño */
-            margin: 20px 0;
-        }
-
-        p {
-            font-size: 1rem; /* Tamaño más pequeño */
-            line-height: 1.6;
-        }
-
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        ul li {
-            font-size: 1rem; /* Tamaño más pequeño */
-            margin: 10px 0;
-        }
-
-        footer {
-            background-color: #1a273b;
-            color: #fff;
-            padding: 15px 0;
-            font-size: 12px; /* Tamaño más pequeño */
-        }
-
-        .footer-icon {
-            width: 30px;
-            height: 30px;
-        }
-    </style>
 </head>
-<body>
+<body class="bg-[#1c2e4a] text-gray-200 text-center font-roboto">
+    <!-- Header -->
+    <header class="bg-[#7f7fa8] text-gray-800 py-2.5 px-5 flex items-center justify-between">
+        <a href="index.html">
+            <img src="Images/Imagen1.jpg" alt="Logo" class="w-12 h-12 cursor-pointer rounded-full">
+        </a>
+        <nav>
+            <ul class="flex gap-4">
+                <li><a href="index.html" class="text-white font-bold no-underline">Home</a></li>
+                <li><a href="Team/team.html" class="text-white font-bold no-underline">Team</a></li>
+                <li><a href="Research/research.html" class="text-white font-bold no-underline">Research</a></li>
+                <li><a href="Publications/news.html" class="text-white font-bold no-underline">News</a></li>
+                <li><a href="Contact/contact.html" class="text-white font-bold no-underline">Contact</a></li>
+                <li><a href="Collaboration/collaboration.html" class="text-white font-bold no-underline">Collaboration</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<header>
-    <a href="index.html">
-        <img src="Images/Imagen1.jpg" alt="Logo">
-    </a>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="Team/team.html">Team</a></li>
-            <li><a href="Research/research.html">Research</a></li>
-            <li><a href="Publications/news.html">News</a></li>
-            <li><a href="Contact/contact.html">Contact</a></li>
-            <li><a href="Collaboration/collaboration.html">Collaboration</a></li>
-        </ul>
-    </nav>
-</header>
+    <!-- Main Image -->
+    <img src="Images/Imagen1.jpg" alt="Main Image" class="w-72 h-72 rounded-full object-cover mx-auto my-5">
 
-<img src="Images/Imagen1.jpg" alt="Main Image" class="main-image">
-
-<div class="content">
-    <h1>Welcome to the Computer Intelligence and Biorobotics Lab</h1>
-    <div class="section">
-        <h2>About Us</h2>
-        <p>The Computer Intelligence and Biorobotics Lab (CIBLab) is a laboratory dedicated to advancing artificial intelligence and its application in critical sectors such as medicine, biology, agronomy, robotics, industrial processes, and energy.</p>
+    <!-- Content -->
+    <div class="max-w-4xl mx-auto px-5 py-5 text-left">
+        <h1 class="text-3xl font-bold mb-5 text-center">Welcome to the Computer Intelligence and Biorobotics Lab</h1>
+        <div class="mb-5">
+            <h2 class="text-2xl font-bold mb-3">About Us</h2>
+            <p class="text-base leading-relaxed">
+                The Computer Intelligence and Biorobotics Lab (CIBLab) is a laboratory dedicated to advancing artificial intelligence and its application in critical sectors such as medicine, biology, agronomy, robotics, industrial processes, and energy.
+            </p>
+        </div>
+        <div class="mb-5">
+            <h2 class="text-2xl font-bold mb-3">Our Mission</h2>
+            <p class="text-base leading-relaxed">
+                Through the design and implementation of advanced machine learning techniques and metaheuristic methods, the laboratory addresses complex problems, promoting innovative and sustainable solutions.
+            </p>
+        </div>
+        <div class="mb-5">
+            <h2 class="text-2xl font-bold mb-3">What We Do</h2>
+            <ul class="list-none p-0">
+                <li class="text-base my-2">Develop algorithms and computational tools for automation in monitoring and quantification.</li>
+                <li class="text-base my-2">Model and simulate complex problems using artificial intelligence.</li>
+                <li class="text-base my-2">Innovate solutions for critical sectors such as healthcare, energy, and robotics.</li>
+            </ul>
+        </div>
     </div>
-    <div class="section">
-        <h2>Our Mission</h2>
-        <p>Through the design and implementation of advanced machine learning techniques and metaheuristic methods, the laboratory addresses complex problems, promoting innovative and sustainable solutions.</p>
-    </div>
-    <div class="section">
-        <h2>What We Do</h2>
-        <ul>
-            <li>Develop algorithms and computational tools for automation in monitoring and quantification.</li>
-            <li>Model and simulate complex problems using artificial intelligence.</li>
-            <li>Innovate solutions for critical sectors such as healthcare, energy, and robotics.</li>
-        </ul>
-    </div>
-</div>
 
-<footer>
-    <a href="https://x.com/CIBLab" target="_blank">
-        <img src="Images/twitter_logo.jpg" alt="Twitter" class="footer-icon">
-    </a>
-    <p>The CIBLab Website</p>
-</footer>
-
+    <!-- Footer -->
+    <footer class="bg-[#1a273b] text-white py-4 text-center">
+        <a href="https://x.com/CIBLab" target="_blank">
+            <img src="Images/twitter_logo.jpg" alt="Twitter" class="w-8 h-8 inline-block">
+        </a>
+        <p class="text-sm mt-2">The CIBLab Website</p>
+    </footer>
 </body>
 </html>
